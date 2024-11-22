@@ -10,16 +10,55 @@ una página web.
 Tipos de Selectores
 
 1.  Selectores Básicos
-       -Selectores Universal
-       -Selectores de Tipo
+       -Selectores Universal ->
+      Seleccionan todos los
+      elementos de un documento
+       -Selectores de Tipo  ->
+       Selecciona un tipo de 
+       elemento de html
 
  2. Selectores de Clase
 
+ Seleccionan los elementos
+ que tiene una clase
+ específica.
+
+ Se usa la 'notación' de
+ punto (.) antes del nombre
+ de la clase
+
+ .nombreClase {
+   propiedad: valor;
+  }
+
+
+
+
  3. Selectores de ID
+
+  Seleccionan un elemento único con un
+  identificador específico.
+
+  Se usa el la ´notación´ de numeral (#)
+  amtes del nombre del id.
+
+  #nombre Id {
+    propiedad: valor;
+ }
+
 
  4. Selectores Combinados
 
     -Descendientes
+
+      Seleccionan elementos dentro de otrps
+      elementos.
+
+      elemento elementoInterno {
+        propiedad: valor;
+    }
+      
+
     -Hijo directo
     -Elemento Adjacente
     -Hermano general
@@ -50,7 +89,7 @@ Tipos de Selectores
 
 
 * {
-  border: 2px solid red;
+ /*  border: 2px solid red; */
   /* Resset Básico */
   margin: 0;
   padding: 0;
@@ -75,10 +114,44 @@ header {
   background-color: cadetblue;
 }
 
+/* Selectores de Clase */
 
+.content {
+   background-color: chocolate;
+   padding: 48px;
+}
 
+.hero {
+  background-color: aliceblue;
+  padding: 24px;
+}
 
+.hero-title {
+  background: darkturquoise;
+  padding: 16px;
+  color: aliceblue;
+  text-align: centerS;
+}
 
+/* Selector de Id */
 
+#about-title {
+  color: mediumblue;
+  font-size: 72px;
+}
+
+/* Combinado - Elementos Decendientes */
+
+aside section {
+ background-color: green;
+ padding: 48px;
+}
+
+.aside-section h3 {
+  color: white;
+  text-align: right;
+  padding: 24px;
+  background-color:black;
+}
 
 
