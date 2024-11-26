@@ -1,0 +1,46 @@
+
+/*  
+
+
+
+
+
+
+
+
+Si las reglas tienen la misma especificidad, se aplicala 
+
+*/
+
+ /* Cascada */
+
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+
+/* Especifidad */
+
+#title {
+  color: darkblue;
+}
+
+.title {
+  color: orangered;
+}
+
+h1 {
+  color: green;
+}
+
+#title {
+  color: chocolate;
+}
+
+h1 {
+  color: blueviolet !important;
+}
