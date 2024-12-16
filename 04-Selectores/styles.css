@@ -1,157 +1,113 @@
-/*
+/* 
+  Selectores
 
-Selectores 
+  Son patrones que permiten seleccionar y aplicar estilos a elementos de una pagina web.
 
-Son patrones que permiten
-seleccionar y aplicar estilos
-específicos a elementos de 
-una página web.
+  Tipos de Selectores
+  
+    1. Selectores Basicos
+      - Selector Universal
+      - Selectores de Tipo
 
-Tipos de Selectores
+    2. Selectores de Clase
+      - sekeccionan los elementos que tienen una clase especifica.
 
-1.  Selectores Básicos
-       -Selectores Universal ->
-      Seleccionan todos los
-      elementos de un documento
-       -Selectores de Tipo  ->
-       Selecciona un tipo de 
-       elemento de html
+      - Se usa la 'notacion' de (.) antes del nombre de la clase 
 
- 2. Selectores de Clase
-
- Seleccionan los elementos
- que tiene una clase
- específica.
-
- Se usa la 'notación' de
- punto (.) antes del nombre
- de la clase
-
- .nombreClase {
-   propiedad: valor;
-  }
-
-
-
-
- 3. Selectores de ID
-
-  Seleccionan un elemento único con un
-  identificador específico.
-
-  Se usa el la ´notación´ de numeral (#)
-  amtes del nombre del id.
-
-  #nombre Id {
-    propiedad: valor;
- }
-
-
- 4. Selectores Combinados
-
-    -Descendientes
-
-      Seleccionan elementos dentro de otrps
-      elementos.
-
-      elemento elementoInterno {
+      - nombreClase {
         propiedad: valor;
-    }
+        }
       
 
-    -Hijo directo
+    3. Selectores de ID
+        Los selectores de ID seleccionan un elemento unico con un identificador especifico.
 
-    -Elemento Adjacente
+        Se usa la 'notacion' de numeral (#) antes del nombre ID
 
-    Selecciona el primer elemento inmediamente
-    despúes de otro. (Su hermano inmediato o en
-    ingles Siblings)
-
-    elemento + elementoAdjacente  {
-      propiedad: valor;
-    }
-    -Hermano general
-
-    Selecciona todos los elementos hermanos
-    después de un elmento.
-
-    elemento ~ elementoHermanos {
-        propiedad: valor;
-   }
-
-  Selecciona elementos que son hijos directos de un elemento padre.
-
-   elemento > elementosHijos {
-       propiedades: valor;
-  }
+        #nombreId {
+          propiedad: valor;
+        }
 
 
-5. Selectores de Atributos
+      4. Selectores Combinados
+      - Descendientes
+          - Seleccionan elementos dentro de otros elementos.
 
-     -Atributo
+          elemento elementoInterno {
+            propiedad: valor;
+          }
 
-     Selecciona elementos según el atributo que
-     indiquemos. Sin importar su valor.
+      - Hijo directo
+        -  Selecciona elementos que son hijos directos de un elemento padre.
 
-     elemento[atributo] {
-     propiedad: valor;
-  }
+          elemento > elementosHijos {
+          propiedad: valor;
+          }
+          
+      - Elemento Adjacente
+        - Selecciona el primer elemento inmediatamente despues de otro. (Su hermano inmediato o "Siblings")
 
-     -Atributo - Valor
+          elemento + elementoAdjacente {
+          propiedad: valor;
+          }
 
-  Selecciona elementos según el atributo y el valor
-  que índiquemos.
+      - Hermano General
+        - Selecciona todos los elementos hermanos despues de un elemento
 
-  elemento[atributo=valor] {
-  propiedad: valor;
-  }
-  
+          elemento ~ elementoHermanos {
+          propiedad: valor;
+          }
 
+    5. Selectores de Atributos
+      - Atributo
+        - Selecciona elementos según el atributo que indiquemos. Sin importar su valor.
 
-6. Selectores Avanzados
+          elemento[ätributo] {
+          propiedad: valor;
+          }
 
-     -Pseudo-clases
+      - Atributo Valor
+        - Selecciona elementos según el atributo y el valor que índiquemos.
+        
+          elemento[atributo=valor] {
+          propiedad: valor
+          }
+      
+    6. Selectores Avanzados
+      - Pseudo-clases
+         - Seleccionamos elementos en un estado en particular.
 
-     Seleccionamos  elmentos en un estado
-     en particular
+          elemento:pseudoclase {
+          propiedad: valor;
+          }
 
-     elemento:pseudoclase {
-      propiedad: valor;
-    }
+      - Pseudo-elementos
+        - Seleccionan partes especificas de un elemento en HTML.
 
-
-     -Pseudo-elemento
-
-    Seleccionan partes específicas de un elemento en html
-
-    elmento :: pseudoi
-    
+          elemento::pseudoElemento {
+          propiedad: valor;
+          }
 
 */
-
 
 /*
- 
-   Selector Básicos
+  Selectores Básicos
 */
 
-/*Universal -> Seleccionar todos los elemntos de un documento
+/*
+  Universal -> Seleccionar todos los elementos de un documento.
 */
-
-
-
 * {
- /*  border: 2px solid red; */
-  /* Resset Básico */
-  margin: 0;
-  padding: 0;
+  /* border: 2px solid red;*/
+  /* resset */
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-/* Selectores de tipo -> Seleccionan un tipo de elemento en html */
-
+/* Selectores de Tipo -> Selecciona un tipo de elemento en html */
 body {
-  background-color: aquamarine;
+ background-color: aquamarine;
 }
 
 h1 {
@@ -159,18 +115,19 @@ h1 {
 }
 
 p {
-  font-size: 120;
+  color: cadetblue;
+  font-size: 24px;
 }
 
 header {
-  background-color: cadetblue;
+  background-color: purple;
 }
 
-/* Selectores de Clase */
 
+/* Selectores de clase */
 .content {
-   background-color: chocolate;
-   padding: 48px;
+  background-color: chocolate;
+  padding: 48px;
 }
 
 .hero {
@@ -179,38 +136,36 @@ header {
 }
 
 .hero-title {
-  background: darkturquoise;
-  padding: 16px;
+  background-color: darkturquoise;
   color: aliceblue;
-  text-align: centerS;
+  padding: 16px;
+  text-align: center;
 }
 
-/* Selector de Id */
 
+/* Selector ID */
 #about-title {
   color: mediumblue;
-  font-size: 72px;
+  font-size: 62px;
 }
 
 /* Combinado - Elementos Decendientes */
-
 aside section {
- background-color: green;
- padding: 48px;
+  background-color: green;
+  padding: 48px;
 }
 
 .aside-section h3 {
   color: white;
   text-align: right;
   padding: 24px;
-  background-color:black;
+  background-color: black;
 }
 
-/* Combinado - Hijos Directos */
-
-ul  > li   {
+/* Combinados - Hijos Directos */
+ul > li {
   background-color: gold;
-} 
+}
 
 .lista > li {
   font-size: 8px;
@@ -218,7 +173,6 @@ ul  > li   {
 }
 
 /* Combinados - Elemento Adjacente */
-
 h3 + ul {
   list-style: none;
 }
@@ -227,10 +181,9 @@ h3 + ul {
   background-color: red;
 }
 
-/* Combinados - Hermanos General */
-
+/* Combinados - Hermano General */
 .bro + li ~ li {
-    background-color: darkviolet;
+  background-color: darkviolet;
 }
 
 .tercero ~ li {
@@ -238,33 +191,37 @@ h3 + ul {
   font-size: 40px;
 }
 
-/* Selectores de Atributo */
 
+
+/* Selector de Atributo */
 a[href] {
   display: block;
   text-decoration: none;
   color: aliceblue;
 }
 
-/* Selector de Atributo con valor */
-
+/* Selector de Atributo con Valor */
 a[href="https://www.instagram.com/"] {
-  font-size: 48px;
+  font-size: 45px;
   color: orangered;
 }
 
-/* Pseudo-clases */
+/* Pseudo-Clases */
 a:hover {
-   background-color: purple;
-   color:white;
-   text-decoration: underline;
+  background-color: purple;
+  color: white;
+  text-decoration: underline;
 }
 
 a:focus {
-  border: 3px solid  red;
+  border: 3px solid red;
 }
 
-/* Pseudo-elemento */
+/* Pseudo-Elementos */
 a::after {
-   content:"Este es un enlace hacia🍱: ";
+  content: "🍱";
+}
+
+a::before {
+  content: "Este es un enlace hacia: ";
 }
