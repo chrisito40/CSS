@@ -1,0 +1,66 @@
+body {
+  font-family: "RIMMONS", sans-serif; /* si se Heredada */
+ color: white; /* Si se Hereda */
+  background-color: darkred; /* No se Hereda */
+
+  height: 1000px; /* Unidad Absoluta */
+  height: 100%; 
+  height: 100vh; /* total */
+}
+
+/* 
+    Bloque y Linea
+    - Los elementos de Bloque miden todo el ancho disponible de sus contenedor.
+
+    - Los elementos de bloque miden el alto de su contenido.
+
+    - Los elementos de Linea miden el ancho de su contenido.
+
+    - Los elementos de linea miden el altro de su contenido, considerando un espacio entre lineas.
+
+
+
+  Width (ancho) y Heigth (alto)
+   - Se usan para establecer las dimensiones de un elemento en una pagina web.
+
+    - Estas propiedades permiten definir el tamaño de los elementos, como cajas, imagenes o contenedores de manera explicita.
+
+      Width estavlece eñ ancho de un elemento y podemos especificar su dimension horizontal con unidades como px, %, em, rem, auto...
+
+
+      Heigth establece la altura de un element y de igual manera, podemos especificar su dimension vertical con unidades como px, %, em, rem y auto.
+
+        *Si no es especifica la altura a un elemento de bloque, el elemento ajustara su altura al contenido.*
+
+        *Si usamos valores con unidades absolutas, limitamos la adaptabilidad de los elementos. Es recomendable usar unidades relativas como % o vw (viewport width)/vh (viewport heigth)*
+
+
+  Para los elementos de line, el width y el heigth no funcionan. Por default se ajustaran a su contenido.
+  - Si queremos que un elemento de linea responda a un ancho y un alto explicito, necesitamos cambiar su comportamiento de visualizacion a traves de la propiedad de display.
+
+  - Para esto, la propiedad display puede recibir los valores de inline-block o block. 
+
+*/
+
+.bloque {
+  width: 100px; /* Unidad Absoluta */
+  width: 50%; /* Unidad Relativa */
+  width: auto; /* Default */
+
+  height: 100px; /* Unidades Absolutas */
+  height: auto; /* Default */
+  height: 50%; /* Unidades Relativas */
+  
+  background-color: chocolate;
+}
+
+.linea {
+
+  display: block; /* Cambia su visualizacion */
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: darkolivegreen;
+}
