@@ -1,84 +1,64 @@
-/*
-
-     Fuentes
-
-    Las fuentes son un  aspecto clave en el diseño web, influyen en la estética, legibilidad y jerarquía visual.
-
-    En CSS la propiedad que define el tipo de fuente en las
-    reglas en:
-
-    font-family:  "Nombre Funte";
+/* 
+En CSS la porpiedad que define 
 
 
-Fuentes Web Safe o Seguras son tipografías predeterminadas
-y que se pueden usar en cualquier sistema operativo y/o
-navegador web.
+font-family: "Nombre Fuente";
 
+Fuentes Web Safe o Seguras son tipografias predeterminadas y que se pueden usar en cualquier sistema operativo y/o navegador web.
 Por estilo o categoría:
+- serif
+- sans-serif
+- monospace
+-cursive -> script
+- fantasy -> decorative
 
-   - serif
-   - sans-serif
-  -  monospace
-   - cursive  -> script
-   - fantasy -> decorative
+Por nombre de la familia tipográfica
 
- Por nombre de la  familia tipográfica
+ -Arial
+ -Times New Roman
+ -Verdana
+ -Geneva
+ -...
 
-   - Arial
-   - Times New Roman
-   - Verdana
-   - Geneva
-   - ...
+  * Los calores que tienen más de una palabra se escriben entre comillas " o ''.
 
-   * Los valores que tienen más de una palabras se escriben entre comillas "" o ''.
+  * Se recomienda usar fuentes de respaldo, si por algunas razón no se carga la fuente principal, se cargarán las fuentes secundarias.
 
-   * Se
+  -Arial,Verdana, sans-serif
+  - "Times New Roman",
 
-   *  Los valores que tienen más de una palabras se escriben entre comillas " o ".
+Fuentes Personalizadas
+ *Fuentes externas
 
-   * Se recomiendan usar fuentes de respaldo, si por alguna
-   razón  no se carga la fuente principal, se cargarán las fuentes secundarias.
+ Son recursos que traemos de servidores remotos.
 
-   - Arial, Verdana,  sans-serif
+ -Google Fonts
+ -Adobe Fonts
+ -Font Squirlt
+ -...
 
+ *Fuentes internas
 
+ Son los recursos que tenemos en nuestro propio sevidor o sistema de carpetas
 
-   Funetes Personalizadas
-
-    + Fuentes externas 
-
-  Son recursos que traemos de servidores 
-  remotos.
-
-   -  Google Fonts
-   - Adobe Fonts
-   - Font Squirlt
-   - ...
- 
-   + Fuenets internas
-
-   Son recursos que tenemos en nuetro propio
-   servidor o sistemas de carpetas
-
-   - Descargamos cátalogo de fuentes.
-   - Guardamos en una carpeta especifica de
-   nuestro sitio web.
-
+ -Descargadas
+ -Guardamos en una carpeta específica de nuestro sitio web
 
 
 */
 
 html {
 
-  /* Por estilo o categoría*/
+  /* Por estilo o categoria */
 
-  font-family: serif;  /*  Default, Patinada */
-  font-family: sans-serif;  /* Sin patines,  Palo Seco, Geometrica*/
-  font-family: monospace;  /* Mono-espaciadas */
-  font-family: cursive;  /* Script o escritura a mano */
-  font-family: fantasy;  /* Decorativas con "glifos" no convencionales*/
+   font-family: serif;/* Default patinada */
+   font-family: sans-serif;/* Sin patines, palo seco, geometrica */
+   font-family: monospace;/* Mono-Espaciadas */
+   font-family: cursive; /* Script o escritura a mano */
+   font-family: fantasy;/* Decorativas con glifos no convencionales */
 
-   /* Por Nombre de familia  tipográfica */
+
+   /* Por Nombre de la familia tipográfica */
 
    font-family: Arial;
    font-family: "Times New Roman";
@@ -86,15 +66,11 @@ html {
    font-family: "Gill Sans";
    font-family: "Courier New";
 
-  
-   /* Fuentes de respaldo */
+/* Fuentes de respaldo */
 
-   font-family: Arial, Helvetica, sans-serif;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-  }
-
-
+font-family: Arial, Helvetica, sans-serif;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 
