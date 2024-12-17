@@ -1,0 +1,121 @@
+/* 
+
+  Fuentes Personalizadas
+
+    Fuentes Externas
+    - Llamadas desde los servidores Remotos.
+    
+    Google Fonts
+        Es n servcio o catalogo de fuentes gratuitas que podemos usar en Internet.
+
+        - Optimizadas para digital.
+        - Gratuitas de uso comercial.
+        - Curadas y de alta Calidad.
+        - Código de vinculacion para web.
+
+        https://fonts.google.com
+
+        1. Seleccionar la fuente y traer el código de incrustación o embed code al HTML y pegarlo entre las etiquetas <head>
+
+        2. Definimos las reglas CSS para los elementos a lo que se las queramos aplicar. Usamos las propiedades de font-family, font-weight, font-style, esto solo para las tipografias estaticas.
+
+
+    Fuentes Internas
+    - Llamamos desde nuestro propio servidor o carpeta de recursos
+
+        1. Debemos tener los archivos en una carpeta especifica.
+        2. Los formatos comunes son .ttf, .otf, .woff, .woff2
+        3. Declaramos en CSS @font-face
+
+         @font-face {
+            font-family: nombreFuente; //Dos alabras entre " "
+            src: url(ubicacion) format("formato"): //Ubicacion y Formato entre " " - NO OLVIDAR LA , DESPUES DE LA URL
+            }
+    
+        4. Creamos la regla de CSS
+          selector {
+          font-family: nombreFuente, respaldo;
+          }
+*/
+
+/* Tipografias Estaticas */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Elige el grosor y el peso de la tipografia. */
+  font-style: normal; /* Elige si es Italica o Cursiva. */
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Tipografias Variables */
+.title{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 876;
+  font-style: italic;
+  transition: font-weight 1s ease;
+}
+
+.title:hover {
+  font-weight: 182;
+  transition: font-weight 1s ease;
+}
+
+.text {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 456;
+  font-style: normal;
+}
+
+/*
+  Elegir dos fuentes distintas en Google Fonts.
+  - Titulo.
+  - Parrafo.
+  - Crear la regla de CSS para cada elemento con un selector de ID.
+
+  NOTA: Comentar los Codigos de Inctrustación Anteriores.
+*/
+
+#title {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* Fuentes Internas */
+@font-face {
+  font-family: "Militta";
+  src: url(./Fonts/Militta.ttf), format(otf);
+}
+
+@font-face {
+  font-family: "Hawthorne Vintage";
+  src: url(./Fonts/Hawthorne\ Vintage.otf), format(otf);
+}
+
+#title {
+  font-family: "RIMONS", sans-serif;
+}
+
+#text {
+  font-family: "Sufinter", sans-serif;
+}
+
+/* Commit: "Fuentes Personalizadas" */
+
+
