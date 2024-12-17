@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+} 
+
+/* 
+Propiedades de texto están relacionadas con el estilo o formato de los textos. 
+
+Permiten controlar su apariencia, alineación, espaciado y decoración. 
+
+Principales 
+  - color -> Define el color del texto. Recibe diferentes tipos de valores: keywords, hexadecimal, rgb o rgba, hsl, transparent. 
+
+  - font-family -> Define la familia tipográfica del texto. Recibe los nombres de las familias, si son de dos palabras se escribe entre comillas. Acepta más de dos valores separados por coma "," como fuentes de respaldo.
+  
+  - font-size -> Define el tamaño del texto. Acepta valores en px, em y rem, porcentaje, terminos predefinidos. 
+
+  - font-style -> Define el estilo de fuente y recibe tres parámetros: normal, italic y oblique.
+
+  -text-align -> Define la alineación del texto. Recibe los valores left, right, center, justify, start y end. 
+
+  - text-decoration -> Añade una línea transversal al texto. Recibe los valores: none, underline, oveline, line-through.
+
+  - text transform -> Controla la Capitalización del texto. Recibe los valores: uppercase, lowercase y capitalize (mayusculas, minusculas, capitalize)
+
+  - line-height -> Controla el espacio entre las lineas de texto. Recibe valores en pz, %, em y rem. Un valor sin unidad seria relativo al tamaño de la fuente.
+
+  letter-spacing -> Es el Espacio entre letras. Recibe valores en pz, %, em y rem.
+
+  word-spacing -> Este es el espacio entre palabras, Recive valores en px, em, y rem y el valor normal.
+
+  text-shadow -> Es la Sombre de Texto. Recibe los valores en el siguiente orden:
+    - offset-x
+    - offset-y
+    - blur
+    - color
+
+      10px 10px red
+      -> se desplaza de derecha y abajo
+
+      10px 10px 10px blue
+      -> Se deslaza de izquierda y arriba
+
+*/ 
+
+h1 {
+  color: white; /* Keywords */
+  font-family:Verdana, Helvetica; 
+  font-size: 25px;
+  font-size: 100%; /* 16px = 100% */ 
+  font-size:xx-large; 
+  font-style: oblique;
+  
+  text-align: center;
+  text-decoration: underline;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  
+
+  letter-spacing: 20px;
+  letter-spacing: 1rem;
+  letter-spacing: 2em;
+  letter-spacing: -10px;
+  letter-spacing: normal;
+
+  text-shadow: 10px 10px 5px rgba(38, 0, 255, 0.822);
+}
+
+p {
+  color: white; /* Keywords */
+  font-family: 'Courier New', Tahoma; 
+  font-size: 24px;
+  font-size: 100%;
+  font-size: medium;
+  font-style: left;
+  text-align: left;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+  line-height: 24px;
+  line-height: 150%;
+  line-height: 4;
+  line-height: 1rem;
+  line-height: 1em;
+
+  word-spacing: 30px;
+  word-spacing: 2rem;
+  word-spacing: 5em;
+  word-spacing: normal;
+}
+
+.important {
+  text-decoration: underline; 
+} 
+
+.a {
+  color: darkgoldenrod;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+
