@@ -55,7 +55,54 @@ En CSS Line Height
 */
 
 body {
-  background-color: white;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: orange;
 }
 
+h1, 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
 
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border: 1px solid white;
+  background-color: darkmagenta;
+}
+
+div {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+/* Unidades Absolutas */ 
+
+.absolute-box {
+  border-radius: 24px;
+}
+
+.px {
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+}
+
+.cm {
+  width: 2cm;
+  height: 3.6cm;
+  background-color: darkolivegreen;
+}
+
+.in {
+  width: 1in;
+  height: 0.5in;
+  background-color: darkred;
+}
