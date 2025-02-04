@@ -54,6 +54,15 @@ En CSS Line Height
 
 */
 
+{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+
 body {
   font-family: sans-serif;
   margin: 20px;
@@ -65,13 +74,15 @@ h1,
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: whitesmoke;
+  color: white;
 }
 
 section {
+  font-size: 20px;
   margin: 40px 0;
   padding: 20px;
   border: 1px solid white;
+  border-radius: 16px;
   background-color: darkmagenta;
 }
 
@@ -80,7 +91,7 @@ div {
   margin: 10px auto;
   padding: 10px;
   font-weight: bold;
-  color: lightblue;
+  color: white;
 }
 
 /* Unidades Absolutas */ 
@@ -105,4 +116,44 @@ div {
   width: 1in;
   height: 0.5in;
   background-color: darkred;
+}
+
+/* Unidades Relativas */
+
+.relative-box {
+  border-radius: 12px;
+}
+
+.em {
+   font-size: 3em; /* Equivale al font-size del padre = 60px */
+   background-color: black;
+}
+
+.rem { 
+  font-size: 3rem; /* Equivale al font-size del root (html) = 32px */
+  background-color: blue;
+}
+
+.percent {
+  width: 50%;
+  height: 50%;
+  background-color: darkgreen;
+}
+
+.vw {
+  background-color: darkblue;
+}
+
+
+.vh {
+  background-color: darkslateblue;
+}
+
+
+.vmin{
+ background-color: darkgoldenrod;
+}
+
+.vmax{
+  background-color: darkslategray;
 }
